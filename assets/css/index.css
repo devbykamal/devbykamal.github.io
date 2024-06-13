@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   padding: 0px;
   margin: 0px;
-
 }
 
 .top-header {
@@ -15,9 +14,7 @@
   background-image: url(../img/bg.jpg);
   background-size: cover;
   border-bottom: 1px solid black;
-
 }
-
 
 a {
   text-decoration: none;
@@ -32,8 +29,6 @@ li {
   height: 53px;
   width: 162px;
 }
-
-
 
 .top-header-contaner {
   width: 93%;
@@ -94,11 +89,11 @@ li {
 .top-header-conten-right ul {
   display: flex;
   justify-content: center;
-  gap: 30px
+  gap: 30px;
 }
 
 .center-section {
-  background-image: url('../img/bg.jpg');
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
@@ -123,15 +118,11 @@ li {
 
 .buttom-button {
   display: flex;
-  gap: 20px
+  gap: 20px;
 }
 
 .mypic img {
   height: 500px;
-  display: flex;
-  position: absolute;
-  top: 0px;
-  right: 20px;
 }
 
 .developer {
@@ -144,43 +135,24 @@ li {
   height: 50px;
 }
 
-/* @media only screen and (max-width:2560px) {
-  .center-conten {
-    width: 1450px;
-    margin: auto;
-  }
-
-  .top-header-conten {
-    width: 1450px;
-    margin: auto;
-  }
+.bar {
+  display: none;
 }
 
-@media only screen and (max-width:1440px) {
-  .center-conten {
-    width: 1250px;
-    margin: auto;
-  }
-
-  .top-header-conten {
-    width: 1250px;
-    margin: auto;
-  }
-}
-
-@media only screen and (max-width:1024px) {
-
-  .center-conten,
-  .top-header-conten {
-    width: 900px;
-    margin: auto;
-  }
-
+@media only screen and (max-width: 768px) {
   .top-header-conten-right {
+    display: none !important;
+  }
+  .bar {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .mypic {
     display: none;
   }
-  .bar{
-    
+  .center-conten {
+    margin-left: 50px;
   }
-
-} */
+}
