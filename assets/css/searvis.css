@@ -29,7 +29,7 @@
 
 body {
     font-size: var(--normal-font-size);
-    background-image: url(../img/bg.jpg);
+background-color: black;
     background-size: cover;
     color: var(--text-color);
     font-weight: 400;
