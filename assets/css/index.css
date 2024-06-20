@@ -101,7 +101,7 @@ li {
 }
 
 .center-section {
-  background-image: url("../img/bg.jpg");
+
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@ li {
 }
 
 .mypic img {
-  height: 500px;
+  height: 400px;
 }
 
 .top-header-conten-left {
@@ -155,9 +155,7 @@ li {
   display: none;
 }
 
-.buttom-hr {
-  border: 1px solid black;
-}
+
 
 @media only screen and (max-width: 768px) {
   .top-header-conten-right {
@@ -178,6 +176,7 @@ li {
     margin-left: 50px;
   }
 }
+
 @media only screen and (max-width: 320px) {
   width: 100%;
 }
