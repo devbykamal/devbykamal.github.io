@@ -277,6 +277,7 @@ img {
 @media screen and (max-width: 320px) {
     .container {
         margin-inline: 1rem;
+        
     }
 
     .about__skills-content {
