@@ -15,9 +15,9 @@
   font-family: "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-style: normal;
-  background: linear-gradient(180deg,
-      hsl(var(--hue), 90%, 80%),
-      hsl(var(--hue), 90%, 30%));
+  background: linear-gradient(45deg, rgb(235, 90, 229), rgb(137, 236, 91)s);
+  color: #fff;
+  text-align: center;
 }
 
 
