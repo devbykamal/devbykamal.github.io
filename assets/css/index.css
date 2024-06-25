@@ -20,8 +20,6 @@
   text-align: center;
 }
 
-
-
 a {
   text-decoration: none;
   color: black;
@@ -75,7 +73,6 @@ li {
 
 .center-text {
   color: rgb(72, 181, 21);
-  ;
 }
 
 .center-conten {
@@ -89,7 +86,6 @@ li {
   padding: 10px;
   color: aliceblue;
   border-radius: 3px;
-
 }
 
 .top-header-conten {
@@ -153,10 +149,14 @@ li {
   background-color: black;
   color: aliceblue;
   height: 50px;
-
-
 }
 
 .bar {
   display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .center-conten {
+    margin-left: 40px;
+  }
 }
