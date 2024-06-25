@@ -3,357 +3,357 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 3.5rem;
+  --header-height: 3.5rem;
 
-    /*========== Colors ==========*/
-    --hue: 255;
-    --first-color: hsl(var(--hue), 90%, 60%);
-    --first-color-alt: hsl(var(--hue), 82%, 56%);
-    --first-color-light: hsl(var(--hue), 40%, 80%);
-    --title-color: hsl(var(--hue), 24%, 16%);
-    --text-color: hsl(var(--hue), 8%, 45%);
-    --text-color-light: hsl(var(--hue), 8%, 60%);
-    --white-color: hsl(0, 0%, 100%);
-    --body-color: hsl(0, 0%, 100%);
-    --container-color: hsl(0, 0%, 100%);
-    --shadow-color: hsla(var(--hue), 90%, 30%, 0.1);
+  /*========== Colors ==========*/
+  --hue: 255;
+  --first-color: hsl(var(--hue), 90%, 60%);
+  --first-color-alt: hsl(var(--hue), 82%, 56%);
+  --first-color-light: hsl(var(--hue), 40%, 80%);
+  --title-color: hsl(var(--hue), 24%, 16%);
+  --text-color: hsl(var(--hue), 8%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 60%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 100%);
+  --shadow-color: hsla(var(--hue), 90%, 30%, 0.1);
 
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Syne", sans-serif;
-    --biggest-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
-    /*========== Font weight ==========*/
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semi-bold: 600;
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 1000;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
 
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
-    :root {
-        --biggest-font-size: 4.5rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1.125rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
-    }
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
 
 /*=============== BASE ===============*/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body,
 input,
 textarea,
 button {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
 }
 
 body {
-    background-color: var(--body-color);
-    color: var(--text-color);
-    transition: background-color 0.4s;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color 0.4s;
 }
 
 input,
 button,
 textarea {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*=============== THEME ===============*/
 .nav__actions {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1120px;
-    margin-inline: 1.5rem;
+  max-width: 1120px;
+  margin-inline: 1.5rem;
 }
 
 .grid {
-    display: grid;
-    gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .section {
-    padding-block: 5rem 1rem;
+  padding-block: 5rem 1rem;
 }
 
 .section__title {
-    font-size: var(--h1-font-size);
-    text-align: center;
-    margin-bottom: 2rem;
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .perfil {
-    width: 250px;
-    height: 250px;
-    background-color: var(--body-color);
-    border: 8px solid var(--first-color);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    transition: background-color 0.4s;
+  width: 250px;
+  height: 250px;
+  background-color: var(--body-color);
+  border: 8px solid var(--first-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.4s;
 }
 
 .perfil__content {
-    width: 180px;
-    height: 180px;
-    border: 10px solid var(--first-color);
-    border-radius: 50%;
-    overflow: hidden;
-    justify-content: center;
-    align-items: flex-end;
-    background: linear-gradient(180deg,
-            hsl(var(--hue), 90%, 80%),
-            hsl(var(--hue), 90%, 30%));
+  width: 180px;
+  height: 180px;
+  border: 10px solid var(--first-color);
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(180deg,
+      hsl(var(--hue), 90%, 80%),
+      hsl(var(--hue), 90%, 30%));
 }
 
 .perfil__img {
-    width: 160px;
+  width: 160px;
 }
 
 .main {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /*=============== BUTTON ===============*/
 .button {
-    display: inline-flex;
-    justify-content: center;
-    background-color: var(--first-color);
-    color: var(--white-color);
-    font-weight: var(--font-semi-bold);
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.4s, box-shadow 0.4s;
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.4s, box-shadow 0.4s;
 }
 
 .button:hover {
-    background-color: var(--first-color-alt);
-    box-shadow: 0 8px 24px hsla(var(--hue), 90%, 30%, 0.3);
+  background-color: var(--first-color-alt);
+  box-shadow: 0 8px 24px hsla(var(--hue), 90%, 30%, 0.3);
 }
 
 /*=============== ABOUT ===============*/
 .about__page {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .about__perfil {
-    justify-self: center;
+  justify-self: center;
 }
 
 .about__content {
-    row-gap: 4rem;
+  row-gap: 4rem;
 }
 
 .about__info {
-    row-gap: 0.75rem;
-    text-align: center;
+  row-gap: 0.75rem;
+  text-align: center;
 }
 
 .about__name {
-    font-size: var(--h1-font-size);
+  font-size: var(--h1-font-size);
 }
 
 .about__profession {
-    font-size: var(--h2-font-size);
+  font-size: var(--h2-font-size);
 }
 
 .about__description b {
-    color: var(--first-color);
+  color: var(--first-color);
 }
 
 .about__button {
-    justify-self: center;
+  justify-self: center;
 }
 
 .about__skills-title {
-    font-size: var(--h3-font-size);
-    text-align: center;
-    margin-bottom: 2rem;
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .about__skills-img {
-    position: relative;
-    width: 35px;
-    transition: transform 0.4s;
+  position: relative;
+  width: 35px;
+  transition: transform 0.4s;
 }
 
 .about__skills-img:hover {
-    transform: translateY(-0.5rem);
+  transform: translateY(-0.5rem);
 
 }
 
 .about__skills-hover-text {
-    position: absolute;
-    font-size: var(--small-font-size);
-    color: var(--text-color);
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .about__skills-img:hover .about__skills-hover-text {
-    opacity: 1;
+  opacity: 1;
 }
 
 .about__skills-img .about__skills-hover-text::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: var(--first-color);
-    transition: width 0.3s ease;
-    transition-delay: 0.3s;
-    /* Délai avant l'apparition du soulignement */
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--first-color);
+  transition: width 0.3s ease;
+  transition-delay: 0.3s;
+  /* Délai avant l'apparition du soulignement */
 }
 
 .about__skills-img:hover .about__skills-hover-text::after {
-    width: 100%;
+  width: 100%;
 }
 
 .about__skills-content {
-    grid-template-columns: repeat(5, max-content);
-    justify-content: center;
-    align-items: center;
-    gap: 2rem 1.5rem;
+  grid-template-columns: repeat(5, max-content);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 1.5rem;
 }
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
-    .container {
-        margin-inline: 1rem;
+  .container {
+    margin-inline: 1rem;
 
-    }
+  }
 
-    .about__skills-content {
-        grid-template-columns: repeat(4, max-content);
-    }
+  .about__skills-content {
+    grid-template-columns: repeat(4, max-content);
+  }
 }
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
-    .about__container {
-        grid-template-columns: 400px;
-        justify-content: center;
-    }
+  .about__container {
+    grid-template-columns: 400px;
+    justify-content: center;
+  }
 }
 
 /* For large devices */
 @media screen and (min-width: 1150px) {
-    .container {
-        margin-inline: auto;
-    }
+  .container {
+    margin-inline: auto;
+  }
 
-    .section {
-        padding-block: 7rem 2rem;
-    }
+  .section {
+    padding-block: 7rem 2rem;
+  }
 
-    .section__title {
-        margin-bottom: 3.5rem;
-    }
+  .section__title {
+    margin-bottom: 3.5rem;
+  }
 
-    .perfil {
-        width: 500px;
-        height: 500px;
-        border-width: 10px;
-    }
+  .perfil {
+    width: 500px;
+    height: 500px;
+    border-width: 10px;
+  }
 
-    .perfil__content {
-        width: 420px;
-        height: 420px;
-        border-width: 10px;
-    }
+  .perfil__content {
+    width: 420px;
+    height: 420px;
+    border-width: 10px;
+  }
 
-    .perfil__img {
-        width: 400px;
-    }
+  .perfil__img {
+    width: 400px;
+  }
 
-    .about__container {
-        grid-template-columns: 500px 440px;
-        align-items: center;
-        column-gap: 8rem;
-        padding-top: 2rem;
-    }
+  .about__container {
+    grid-template-columns: 500px 440px;
+    align-items: center;
+    column-gap: 8rem;
+    padding-top: 2rem;
+  }
 
-    .about__data {
-        row-gap: 3.5rem;
-    }
+  .about__data {
+    row-gap: 3.5rem;
+  }
 
-    .about__info {
-        text-align: initial;
-    }
+  .about__info {
+    text-align: initial;
+  }
 
-    .about__button {
-        justify-self: flex-start;
-    }
+  .about__button {
+    justify-self: flex-start;
+  }
 
-    .about__skills-title {
-        text-align: initial;
-    }
+  .about__skills-title {
+    text-align: initial;
+  }
 
-    .about__skills-content {
-        grid-template-columns: repeat(7, max-content);
-        justify-content: initial;
-    }
+  .about__skills-content {
+    grid-template-columns: repeat(7, max-content);
+    justify-content: initial;
+  }
 
-    .about__skills-img {
-        width: 40px;
-    }
+  .about__skills-img {
+    width: 40px;
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
@@ -375,7 +375,7 @@ textarea {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: rgb(137,236,91);
+  background-color: ;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -395,13 +395,15 @@ textarea {
 }
 
 .contact-form {
-  background-color: rgb(91,152,235);
+  background: linear-gradient(45deg, #1abc9c, rgb(235, 90, 229));
+  color: #fff;
+  text-align: center;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, rgb(235,90,229));
+  background: linear-gradient(135deg, transparent 20%, rgb(235, 90, 229));
   position: absolute;
 }
 
@@ -424,7 +426,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: rgb(235, 90, 229);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -531,7 +533,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -563,7 +565,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: rgb(107, 61, 245);
 }
 
 .text {
@@ -605,7 +607,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, rgb(235,90,229));
+  background: linear-gradient(45deg, #1abc9c, rgb(235, 90, 229));
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -634,7 +636,7 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #1cd4af, rgb(235,90,229));
+  background: linear-gradient(to bottom, #1cd4af, rgb(235, 90, 229));
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -749,25 +751,25 @@ textarea.input {
 
 
 @media only screen and (max-width: 768px) {
-    .top-header-conten-right {
-        display: none !important;
-    }
+  .top-header-conten-right {
+    display: none !important;
+  }
 
-    .bar {
-        display: block;
-    }
+  .bar {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .mypic {
-        display: none;
-    }
+  .mypic {
+    display: none;
+  }
 
-    .center-conten {
-        margin-left: 50px;
-    }
+  .center-conten {
+    margin-left: 50px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-    width: 100%;
+  width: 100%;
 }
