@@ -159,6 +159,7 @@ li {
 
 .bar {
   display: none;
+  color: white
 }
 
 /*=============== GOOGLE FONTS ===============*/
@@ -518,8 +519,6 @@ img {
   }
 }
 
-}
-
 
 @media only screen and (max-width: 768px) {
   .top-header-conten-right {
@@ -527,7 +526,7 @@ img {
   }
 
   .bar {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -541,6 +540,3 @@ img {
   }
 }
 
-@media only screen and (max-width: 320px) {
-  width: 100%;
-}

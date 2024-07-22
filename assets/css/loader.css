@@ -1,0 +1,71 @@
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ebebeb;
+  width: 100%;
+  height: 100vh;
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.zoom-hover:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+#mobileNav {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 400px;
+  height: 100%;
+  z-index: 100000;
+  padding: 50px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+#mobileNavCloser {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+#mobileNav a {
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+}
+
+#mobileNav a:hover {
+  background-color: #222;
+}
