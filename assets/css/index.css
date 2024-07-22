@@ -535,6 +535,3 @@ img {
   }
 }
 
-@media only screen and (max-width: 320px) {
-  width: 100%;
-}
