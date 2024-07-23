@@ -1,6 +1,5 @@
 window.addEventListener("load", function () {
   document.getElementById("loader").style.display = "none";
-  POPUP.open(`THis is an advertisement!`);
 });
 
 document
@@ -41,3 +40,12 @@ document.getElementById("learnMore").onclick = function () {
 document.getElementById("hireMe").onclick = function () {
   POPUP.open(`<h1>Hire me please</h1>`);
 };
+
+const maxNumber = 15;
+let currentNumber = 1;
+
+const counterInterval = setInterval(() => {
+  if (currentNumber !== maxNumber) currentNumber++;
+  else clearInterval(counterInterval);
+  document.getElementById("counter").innerText = currentNumber;
+}, 100);
