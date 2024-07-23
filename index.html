@@ -13,6 +13,8 @@
     <title>Kamal Bajgain</title>
 
     <link rel="icon" href="./assets/img/Screenshot_2024-06-22_131557-removebg-preview.png">
+
+    <link rel="stylesheet" href="./assets/css/popup.css">
 </head>
 
 <body>
@@ -20,12 +22,18 @@
         <img src="./assets/img/walk.gif" alt="loader">
         <span>Loading...</span>
     </div>
+
     <div id="mobileNav">
         <div id="mobileNavCloser">✖</div>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
+    </div>
 
+    <div id="popup" style="display: none;">
+        <div id="popupCloser">&Cross;</div>
+        <div id="popupContent">
+        </div>
     </div>
 
     <div class="top-header">
@@ -83,10 +91,10 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
                 <div class="buttom-button" style="display: flex; gap: 20px">
-                    <button class="button-hireme first" id="secbutton">
+                    <button class="button-hireme first" id="learnMore">
                         Learn More
                     </button>
-                    <button class="button-hireme second" id="secbutton">
+                    <button class="button-hireme second" id="hireMe">
                         Hire Me
                     </button>
                 </div>
@@ -384,6 +392,8 @@
 
 
     <script src="./script.js"></script>
+    <script src="./popup.js"></script>
+
 
 </body>
 
