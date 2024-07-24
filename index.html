@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./assets/css/popup.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -80,7 +83,7 @@
     </div>
     <div class="center-section">
         <div class="center-conten">
-            <div class="textside">
+            <div class="textside" data-aos="flip-left">
                 <p id="top" style="margin-top: 120px">GET EVERY SINGLE SOLUTIONS.</p>
                 <h2>
                     I'M Web devloper<br />
@@ -115,7 +118,7 @@
 
         <section class="container">
             <section class="card__container">
-                <div class="card__bx" style="--clr: #89ec5b">
+                <div class="card__bx" style="--clr: #89ec5b" data-aos="fade-left">
                     <div class="card__data">
                         <div class="card__icon"><i class="fa-solid fa-paintbrush"></i></div>
                         <div class="card__content">
@@ -125,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card__bx" style="--clr: #eb5ae5">
+                <div class="card__bx" style="--clr: #eb5ae5" data-aos="fade-right">
                     <div class="card__data">
                         <div class="card__icon"><i class="fa-solid fa-code"></i></div>
                         <div class="card__content">
@@ -135,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card__bx" style="--clr: #5b98eb">
+                <div class="card__bx" style="--clr: #5b98eb" data-aos="zoom-out">
                     <div class="card__data">
                         <div class="card__icon"><i class="fa-brands fa-searchengin"></i></div>
                         <div class="card__content">
@@ -295,100 +298,87 @@
             </div>
         </div>
     </section>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Form</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    </head>
+    <div class="container">
+        <span class="big-circlecontact-form"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    dolorum adipisci recusandae praesentium dicta!
+                </p>
 
-    <body>
-        <div class="container">
-            <span class="big-circlecontact-form"></span>
-            <img src="img/shape.png" class="square" alt="" />
-            <div class="form">
-                <div class="contact-info">
-                    <h3 class="title">Let's get in touch</h3>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                        dolorum adipisci recusandae praesentium dicta!
-                    </p>
+                <div class="info">
+                    <div class="information">
+                        <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
 
-                    <div class="info">
-                        <div class="information">
-                            <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
-
-                            <p>lamki-chuha , gulara kailaiw</p>
-                        </div>
-                        <div class="information">
-                            <i class="fas fa-envelope"></i> &nbsp &nbsp
-                            <p>kamalbajgain98.com</p>
-                        </div>
-                        <div class="information">
-                            <i class="fas fa-phone"></i>&nbsp&nbsp
-                            <p>24625976/64626403</p>
-                        </div>
+                        <p>lamki-chuha , gulara kailaiw</p>
                     </div>
-
-                    <div class="social-media">
-                        <p>Connect with us :</p>
-                        <div class="social-icons">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
+                    <div class="information">
+                        <i class="fas fa-envelope"></i> &nbsp &nbsp
+                        <p>kamalbajgain98.com</p>
+                    </div>
+                    <div class="information">
+                        <i class="fas fa-phone"></i>&nbsp&nbsp
+                        <p>24625976/64626403</p>
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <span class="circle one"></span>
-                    <span class="circle two"></span>
-
-                    <form action="index.html" autocomplete="off">
-                        <h3 class="title">Contact us</h3>
-                        <div class="input-container">
-                            <input type="text" name="name" class="input" />
-                            <label for="">Username</label>
-                            <span>Username</span>
-                        </div>
-                        <div class="input-container">
-                            <input type="email" name="email" class="input" />
-                            <label for="">Email</label>
-                            <span>Email</span>
-                        </div>
-                        <div class="input-container">
-                            <input type="tel" name="phone" class="input" />
-                            <label for="">Phone</label>
-                            <span>Phone</span>
-                        </div>
-                        <div class="input-container textarea">
-                            <textarea name="message" class="input"></textarea>
-                            <label for="">Message</label>
-                            <span>Message</span>
-                        </div>
-                        <input type="submit" value="Send" class="btn" />
-                    </form>
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
         </div>
+    </div>
 
-        <script src="contact.js"></script>
-    </body>
 
-    </html>
+
 
     </div>
     </div>
@@ -399,8 +389,12 @@
 
     <script src="./script.js"></script>
     <script src="./popup.js"></script>
+    <script src="contact.js"></script>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
