@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Video PLayer</title>
+
+    <style>
+        button {
+            padding: 4px 14px 4px 14px;
+            border: 1px solid rgb(216, 216, 216);
+            outline: none;
+            cursor: pointer;
+            background-color: #ebebeb;
+        }
+
+        button:active {
+            background-color: #ddd;
+        }
+    </style>
+
+</head>
+
+<body>
+    <video id="myVideo">
+        <source src="./audio-video/entropy.mp4" type="video/mp4">
+        Your browser does not support the audio element.
+    </video>
+
+    <button onclick="toggleVideo()" id="toggler">></button>
+    <button onclick="mute();" id="muter">Mute</button>
+
+    <input type="text" id="currentTimeInput">
+    <button onclick="goToTime();">Go</button>
+
+
+
+    <script>
+        const myVideo = document.getElementById("myVideo");
+
+        function toggleVideo() {
+            if (myVideo.paused) {
+                myVideo.play();
+                document.getElementById("toggler").innerText = "||";
+            }
+            else {
+                myVideo.pause();
+                document.getElementById("toggler").innerText = ">";
+            }
+        }
+
+        function mute() {
+            if (myVideo.muted) {
+                myVideo.muted = false;
+                document.getElementById("muter").innerText = "Mute";
+            } else {
+                myVideo.muted = true;
+                document.getElementById("muter").innerText = "Un Mute";
+
+            }
+        }
+
+        function goToTime() {
+            const chosenTime = document.getElementById("currentTimeInput").value;
+            myVideo.currentTime = chosenTime;
+        }
+
+    </script>
+
+</body>
+
+</html>
