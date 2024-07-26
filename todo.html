@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
+
+    <style>
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .todo-creator {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #todoList {
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ebebeb;
+            margin-top: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .todo {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 5px 0 5px 0;
+        }
+
+        .todo-close {
+            color: red;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="todo-creator">
+        <div id="editor"></div>
+        <div class="buttons">
+            <button onclick="addTodo()">Add</button>
+            <button onclick="clearTodos()">Clear Todos</button>
+        </div>
+    </div>
+
+    <div id="todoList">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+
+    <script>
+        const quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+    </script>
+    <script src="./todo.js"></script>
+
+</body>
+
+</html>
